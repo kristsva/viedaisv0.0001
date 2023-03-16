@@ -169,10 +169,10 @@
 	}
 	@media (max-width: 575px) {
 		button {
-			font-size: 12px !important;
+			font-size: 11px !important;
 		}
 		label {
-			font-size: 12px !important;
+			font-size: 11px !important;
 		}
 	}
 </style>
