@@ -7,7 +7,7 @@
 >
 	<div class="text-white/70 flex items-center flex-none">
 		Tavs <span class="mx-1 font-bold"> VIEDAIS</span>
-		filmu un TV seriālu ģenerātors. Beta 0.0001
+		filmu un TV seriālu ģenerātors
 	</div>
 	<div class="flex items-center mt-2 md:mt-0">
 		<!-- <a class="group" aria-label="TaxPal on Twitter" href="https://twitter.com/steph_dietz_"

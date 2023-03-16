@@ -9,5 +9,4 @@
 		<TvIcon />
 		<div class="text-2xl md:text-xl font-bold ml-2">viedais.lv</div>
 	</button>
-	<div class="md:text-l ml-2">Beta v0.0001</div>
 </div>
