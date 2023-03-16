@@ -80,7 +80,7 @@
 	];
 </script>
 
-<div class="pt-6 md:pt-10 text-slate-200 container">
+<div class="col-12">
 	<div>
 		<div class="mb-8">
 			<div class="mb-2 font-semibold text-lg">Es gribu skatīties:</div>
@@ -156,5 +156,23 @@
 		align-items: center;
 		justify-content: center;
 		margin: 0 !important;
+	}
+	button {
+		font-size: 12px !important;
+	}
+	textarea {
+		min-height: 120px;
+	}
+	textarea::placeholder {
+		font-weight: normal;
+		color: #333 !important;
+	}
+	@media (max-width: 575px) {
+		button {
+			font-size: 12px !important;
+		}
+		label {
+			font-size: 12px !important;
+		}
 	}
 </style>

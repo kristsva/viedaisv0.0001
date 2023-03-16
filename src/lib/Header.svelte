@@ -3,13 +3,9 @@
 	import 'bootstrap/dist/css/bootstrap.min.css';
 </script>
 
-<div class="max-w-4xl mx-auto w-full">
-	<div class="container">
-		<div class="row py-3">
-			<div class="col-12">
-				<h1 class="mx-1"><a href="/">VIEDAIS</a></h1>
-			</div>
-		</div>
+<div class="row py-3 border-bottom">
+	<div class="col-12">
+		<h1 class="mx-1 text-center"><a href="/">VIEDAIS</a></h1>
 	</div>
 </div>
 

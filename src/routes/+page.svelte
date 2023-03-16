@@ -129,18 +129,17 @@
 		/>
 	</div>
 
-	<div class="absolute inset-0 px-6 flex flex-col h-screen overflor-auto">
-		<Header
-			on:click={() => {
-				makeRecommendation = false;
-			}}
-		/>
-
+	<!-- MAIN SECTION -->
+	<div class="absolute inset-0 flex flex-col h-screen overflor-auto">
+		<div class="container">
+			<Header
+				on:click={() => {
+					makeRecommendation = false;
+				}}
+			/>
+		</div>
 		{#if !makeRecommendation}
-			<div
-				in:fade
-				class="flex-grow max-w-4xl mx-auto w-full md:pt-20  flex flex-col items-center justify-center"
-			>
+			<div in:fade class="mainSection container py-5 my-5">
 				<Home
 					on:click={() => {
 						makeRecommendation = true;
@@ -148,8 +147,8 @@
 				/>
 			</div>
 		{:else}
-			<div in:fade class="w-full max-w-4xl mx-auto">
-				<div class="w-full mb-8">
+			<div in:fade class="container py-5">
+				<div class="row">
 					<Form
 						bind:cinemaType
 						bind:selectedCategories
@@ -197,6 +196,8 @@
 				</div>
 			</div>
 		{/if}
-		<Footer />
+		<div class="container">
+			<Footer />
+		</div>
 	</div>
 </div>
