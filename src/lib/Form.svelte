@@ -19,7 +19,7 @@
 	export let loading;
 
 	const categoryTypes = [
-		'Akšions',
+		'Akšons',
 		'Piedzīvojumi',
 		'Animācija',
 		'Biogrāfija',
@@ -80,10 +80,10 @@
 	];
 </script>
 
-<div class="pt-6 md:pt-10 text-slate-200">
+<div class="pt-6 md:pt-10 text-slate-200 container">
 	<div>
 		<div class="mb-8">
-			<div class="mb-4 font-semibold text-lg">Es gribu skatīties:</div>
+			<div class="mb-2 font-semibold text-lg">Es gribu skatīties:</div>
 			<div class="flex items-center">
 				{#each cinemaTypes as type (type.value)}
 					<button
@@ -126,7 +126,7 @@
 			<div class="mb-4 font-semibold text-lg">Tavs komentārs:</div>
 			<textarea
 				bind:value={specificDescriptors}
-				class="bg-white/40 border border-white/0 p-2 placeholder:text-slate-600 text-slate-900 w-full h-50 font-medium"
+				class="textAreaField bg-white/40 border border-white/0 p-2 placeholder:text-slate-600 text-slate-900 w-full font-medium"
 				placeholder="Piemēram, jābūt vismaz divām sezonām un jābūt Netflix un Hulu."
 			/>
 			<button
@@ -134,8 +134,8 @@
 				class={`${
 					loading
 						? 'bg-red-400/50'
-						: 'bg-red-600 hover:bg-gradient-to-r from-red-700 via-red-600 to-red-700 '
-				} mt-4 w-full h-10 text-white font-bold p-3 flex items-center justify-center`}
+						: 'generateBtn bg-red-600 hover:bg-gradient-to-r from-red-700 via-red-600 to-red-700 '
+				} mt-4 w-full text-white font-bold p-3 flex items-center justify-center`}
 			>
 				{#if loading}
 					<LoadingIndicator />
@@ -146,3 +146,15 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	label {
+		cursor: pointer;
+	}
+	.generateBtn p {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 !important;
+	}
+</style>

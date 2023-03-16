@@ -5,9 +5,7 @@
 <div
 	class="max-w-4xl mx-auto w-full flex md:flex-row flex-col items-center md:justify-between py-8 mt-20 border-t border-white/20"
 >
-	<div class="text-white/70 flex items-center flex-none">
-		Tavs VIEDAIS filmu un TV seriālu ģenerātors
-	</div>
+	<div class="text-white/70 flex items-center flex-none">VIEDAIS.LV 2023</div>
 	<div class="flex items-center mt-2 md:mt-0">
 		<!-- <a class="group" aria-label="TaxPal on Twitter" href="https://twitter.com/steph_dietz_"
 			><svg aria-hidden="true" class="mr-4 h-6 w-6 fill-white/50 group-hover:fill-white/70"

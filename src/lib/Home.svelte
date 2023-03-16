@@ -1,15 +1,22 @@
-<div class="w-full">
-	<div
-		class="text-center md:text-left font-bold text-slate-200 text-4xl md:text-5xl mb-8 md:mb-16 w-full"
-	>
-		Atrodi sev piemērotāko<br />TV seriālu vai filmu šim<br />vakaram ar AI palīdzību.
-	</div>
-	<div class="text-left md:text-left flex flex-wrap items-center mr-auto">
-		<button
-			on:click
-			class="text-center bg-red-600 hover:bg-red-700 mb-4 flex-none text-white font-bold py-3 px-6 mr-8"
-		>
-			AIZIET
-		</button>
+<div class="container">
+	<div class="row py-2">
+		<div class="col-12">
+			<h2>Atrodi šim vakaram <br />piemērotāko TV seriālu<br /> vai filmu ar AI.</h2>
+			<button
+				on:click
+				class="mt-5 bg-red-600 hover:bg-red-700 mb-4 flex-none text-white font-bold py-3 px-6 mr-8"
+			>
+				Meklēt
+			</button>
+		</div>
 	</div>
 </div>
+
+<style>
+	h2 {
+		font-size: 3.5rem;
+	}
+	button {
+		min-width: 220px;
+	}
+</style>
