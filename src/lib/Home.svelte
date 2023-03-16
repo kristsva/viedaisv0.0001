@@ -19,4 +19,9 @@
 	button {
 		min-width: 220px;
 	}
+	@media (max-width: 768px) {
+		h2 {
+			font-size: 2.5rem;
+		}
+	}
 </style>
