@@ -1,4 +1,4 @@
-<div class="row py-4">
+<div class="row py-4 my-4">
 	<div class="col-12 text-center">
 		<h2>Atrodi šim vakaram <br />piemērotāko TV seriālu<br /> vai filmu ar AI.</h2>
 		<button
