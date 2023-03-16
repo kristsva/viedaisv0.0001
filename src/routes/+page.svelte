@@ -160,9 +160,9 @@
 					{#if recommendations.length > 0 && endStream}
 						<button
 							on:click={clearForm}
-							class="bg-white/20 hover:bg-white/30 mt-4 w-full h-10 text-white font-bold p-3 rounded-full flex items-center justify-center"
+							class="bg-white/20 hover:bg-white/30 mt-4 w-full h-10 text-white font-medium p-3 flex items-center justify-center"
 						>
-							Clear Search
+							Dzēst filtru
 						</button>
 					{/if}
 				</div>

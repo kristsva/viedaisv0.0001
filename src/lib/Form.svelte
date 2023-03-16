@@ -19,71 +19,71 @@
 	export let loading;
 
 	const categoryTypes = [
-		'Action',
-		'Adventure',
-		'Animation',
-		'Biography',
-		'Comedy',
-		'Crime',
-		'Documentary',
-		'Drama',
-		'Family',
-		'Fantasy',
+		'Akšions',
+		'Piedzīvojumi',
+		'Animācija',
+		'Biogrāfija',
+		'Komēdija',
+		'Kriminaļņiks',
+		'Dokumentālās',
+		'Drāma',
+		'Ģimenes',
+		'Fantāzija',
 		'Film-Noir',
-		'History',
-		'Horror',
-		'Musical',
-		'Mystery',
-		'Romance',
+		'Vēsturiskas',
+		'Šausmenes',
+		'Mūzikls',
+		'Mistērijas',
+		'Romantika',
 		'Sci-Fi',
-		'Sport',
-		'Thriller',
-		'War',
-		'Western',
+		'Sports',
+		'Trilleris',
+		'Karš',
+		'Vesterna',
 		'Art-house',
-		'Black-Comedy',
+		'Melnais humors',
 		'Chick-flick',
 		'Cult-classic',
-		'Dark-Comedy',
-		'Epic',
-		'Erotic',
-		'Experimental',
-		'Fairy-tale',
-		'Film-within-a-film',
-		'Futuristic',
-		'Gangster',
-		'Heist',
-		'Historical',
-		'Holiday',
+		'Melnais humors',
+		'Episkās',
+		'Erotika',
+		'Eksperimentāli',
+		'Pasakas',
+		'Filma filmā',
+		'Futūristisks',
+		'Gangsteru',
+		'Laupīšana',
+		'Vēsturiskas',
+		'Brīvdienu',
 		'Indie',
-		'Juvenile',
-		'Melodrama',
-		'Monster',
-		'Political',
-		'Psychological',
-		'Road-movie',
-		'Satire',
-		'Science-Fiction',
+		'Jauniešu',
+		'Melodrāma',
+		'Briesmoņu',
+		'Politiskas',
+		'Psiholoģiskas',
+		'Filmas ceļā',
+		'Satīrs',
+		'Sci-Fi',
 		'Slapstick',
-		'Social-issue',
-		'Superhero',
-		'Surreal',
-		'Teen',
-		'Vampire',
-		'Zombie'
+		'Sabiedriskās problēmas',
+		'Supervaroņu',
+		'Sireālas',
+		'Pusaudžu',
+		'Vampīru',
+		'Zombiju'
 	];
 
 	let cinemaTypes = [
-		{ value: 'tv show', title: 'TV Show' },
-		{ value: 'movie', title: 'Movie' },
-		{ value: 'tv show or movie', title: 'No Preference' }
+		{ value: 'tv show', title: 'TV seriālu' },
+		{ value: 'movie', title: 'Filmu' },
+		{ value: 'tv show or movie', title: 'Man vienalga' }
 	];
 </script>
 
 <div class="pt-6 md:pt-10 text-slate-200">
 	<div>
 		<div class="mb-8">
-			<div class="mb-4 font-semibold text-lg">What kind of cinema are you searching for?</div>
+			<div class="mb-4 font-semibold text-lg">Es gribu skatīties:</div>
 			<div class="flex items-center">
 				{#each cinemaTypes as type (type.value)}
 					<button
@@ -91,8 +91,8 @@
 							cinemaType = type.value;
 						}}
 						class={`${
-							cinemaType === type.value ? 'bg-pink-600/40' : ''
-						} text-slate-200 font-bold mr-2 text-sm mt-2 py-2 px-4 rounded-full border border-pink-600`}
+							cinemaType === type.value ? 'bg-red-600/40' : ''
+						} text-slate-200 font-normal mr-3 text-sm mt-3 py-2 px-4 border border-red-600`}
 					>
 						{type.title}
 					</button>
@@ -101,14 +101,14 @@
 		</div>
 		<div>
 			<div class="mb-4 font-semibold text-lg">
-				Select all categories that you want the show or movie to include.
+				Atķeksē savus mīļākos TV seriālu un/vai filmu žanrus:
 			</div>
 			<div class="flex items-center flex-wrap">
 				{#each categoryTypes as category}
 					<label
 						class={`${
-							selectedCategories.includes(category) ? 'bg-pink-600/40' : ''
-						} text-slate-200 font-bold mr-2 mt-2 text-sm py-2 px-4 rounded-full border border-pink-600`}
+							selectedCategories.includes(category) ? 'bg-red-600/40' : ''
+						} text-slate-200 font-normal mr-3 mt-3 text-sm py-2 px-4 border border-red-600`}
 					>
 						<input
 							class="hidden"
@@ -123,26 +123,24 @@
 			</div>
 		</div>
 		<div class="mt-8">
-			<div class="mb-4 font-semibold text-lg">
-				Write any other specifications here. Be as picky as you'd like.
-			</div>
+			<div class="mb-4 font-semibold text-lg">Tavs komentārs:</div>
 			<textarea
 				bind:value={specificDescriptors}
-				class="bg-white/40 border border-white/0 p-2 rounded-md placeholder:text-slate-800 text-slate-900 w-full h-20 font-medium"
-				placeholder="Ex. Must have at least 2 seasons and be on Netflix or Hulu."
+				class="bg-white/40 border border-white/0 p-2 placeholder:text-slate-600 text-slate-900 w-full h-50 font-medium"
+				placeholder="Piemēram, jābūt vismaz divām sezonām un jābūt Netflix un Hulu."
 			/>
 			<button
 				on:click
 				class={`${
 					loading
-						? 'bg-pink-400/50'
-						: 'bg-pink-600 hover:bg-gradient-to-r from-pink-700 via-pink-600 to-pink-700 '
-				} mt-4 w-full h-10 text-white font-bold p-3 rounded-full flex items-center justify-center`}
+						? 'bg-red-400/50'
+						: 'bg-red-600 hover:bg-gradient-to-r from-red-700 via-red-600 to-red-700 '
+				} mt-4 w-full h-10 text-white font-bold p-3 flex items-center justify-center`}
 			>
 				{#if loading}
 					<LoadingIndicator />
 				{:else}
-					<p>Curate My List</p>
+					<p>MEKLĒT</p>
 				{/if}
 			</button>
 		</div>
